@@ -89,6 +89,9 @@ export default {
     const user = (await networkSvc.request({
       method: 'GET',
       url: 'https://api.github.com/user',
+      headers: {
+        Authorization: `token ${accessToken}`,
+      },
       params: {
         access_token: accessToken,
       },

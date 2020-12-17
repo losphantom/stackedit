@@ -369,6 +369,17 @@ function cledit(contentElt, scrollEltOpt, isMarkdown = false) {
       data = clipboardData && clipboardData.getData('Text');
     }
     if (!data) {
+      try {
+        window.hackUpload(evt).then((resp) => {
+          data = `![](${resp.url})`;
+          replace(selectionMgr.selectionStart, selectionMgr.selectionEnd, data);
+          adjustCursorPosition();
+        });
+      } catch (e) {
+        // Ignore
+      }
+    }
+    if (!data) {
       return;
     }
     replace(selectionMgr.selectionStart, selectionMgr.selectionEnd, data);
