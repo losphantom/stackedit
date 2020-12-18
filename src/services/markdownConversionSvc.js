@@ -12,7 +12,6 @@ const diffMatchPatch = new DiffMatchPatch();
 const languageAliases = ({
   js: 'javascript',
   json: 'javascript',
-  java: 'javascript',
   html: 'markup',
   svg: 'markup',
   xml: 'markup',

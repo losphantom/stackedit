@@ -15,6 +15,8 @@ const prismScripts = [
 prismScripts.push(
   path.join(path.dirname(require.resolve('prismjs/components/prism-core')), 'prism-!(*.min).js'));
 
+prismScripts.map(console.log);
+
 gulp.task('build-prism', () => gulp.src(prismScripts)
   .pipe(concat('prism.js'))
   .pipe(gulp.dest(path.dirname(require.resolve('prismjs')))));
