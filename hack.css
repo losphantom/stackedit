@@ -30,11 +30,12 @@ blockquote p,
 .markdown-highlighting span.cl {
     color: rgb(84 193 57 / 88%);
 }
-
+/*
 p,
 .markdown-highlighting span.p {
     color: #EBDFB4;
 }
+*/
 
 .cl-preview-section a,
 .markdown-highlighting span.link {
