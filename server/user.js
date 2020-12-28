@@ -105,12 +105,13 @@ exports.paypalIpn = (req, res, next) => Promise.resolve()
   .catch(next);
 
 exports.checkSponsor = (idToken) => {
-  if (!conf.publicValues.allowSponsorship) {
-    return Promise.resolve(true);
-  }
-  if (!idToken) {
-    return Promise.resolve(false);
-  }
-  return exports.getUserFromToken(idToken)
-    .then(userInfo => userInfo && userInfo.sponsorUntil > Date.now(), () => false);
+  // if (!conf.publicValues.allowSponsorship) {
+  //   return Promise.resolve(true);
+  // }
+  // if (!idToken) {
+  //   return Promise.resolve(false);
+  // }
+  // return exports.getUserFromToken(idToken)
+  //   .then(userInfo => userInfo && userInfo.sponsorUntil > Date.now(), () => false);
+  return Promise.resolve(true);
 };
