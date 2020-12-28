@@ -50,6 +50,7 @@ const readJson = (str) => {
 };
 
 exports.generate = (req, res) => {
+  console.log('----------------- req: ' + req);
   let wkhtmltopdfError = '';
   user.checkSponsor(req.query.idToken)
     .then((isSponsor) => {
@@ -171,6 +172,7 @@ exports.generate = (req, res) => {
     }))
     .catch((err) => {
       const message = err && err.message;
+      console.log(`xxxxxxxxxxxxxx err: ${err}, msg: ${message}`);
       if (message === 'unauthorized') {
         res.statusCode = 401;
         res.end('Unauthorized.');

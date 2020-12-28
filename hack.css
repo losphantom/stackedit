@@ -1,76 +1,71 @@
-istrong,
-span.strong,
-span.strong span.p {
+strong,
+.strong,
+.strong .p {
     color: rgb(230 110 24 / 95%);
 }
-span.h1 span.p,
-span.h2 span.p,
-span.h3 span.p,
-span.h4 span.p,
-span.h5 span.p,
-span.h6 span.p,
-span.h7 span.p,
+.h1 .p,
+.h2 .p,
+.h3 .p,
+.h4 .p,
+.h5 .p,
+.h6 .p,
+.h7 .p,
 h1, h2, h3, h4, h5, h6, h7 {
     color: orange
 }
 
-.markdown-highlighting span.cl-li + span.token.p,
+.cl-li + .token.p,
 li, li > p {
     color: rgb(133 166 186);
 }
-.markdown-highlighting span.cl.cl-li {
+.cl.cl-li {
     font-weight: bold!important;
 }
 
 blockquote p,
-.markdown-highlighting span.blockquote span.p {
+.blockquote .p {
     color: #b8c30f;
 }
 
-.markdown-highlighting span.cl {
+.cl {
     color: rgb(84 193 57 / 88%);
 }
 /*
 p,
-.markdown-highlighting span.p {
+ .p {
     color: #EBDFB4;
 }
 */
 
 .cl-preview-section a,
-.markdown-highlighting span.link {
+ .link {
     color: rgb(224 238 255);
 }
 
 code, pre,
-.markdown-highlighting span.code,
-.markdown-highlighting span.pre {
+ .code,
+ .pre {
     color: rgb(241 184 25 / 92%);
 }
 
 .cl-preview-section code, 
-.markdown-highlighting span.code {
+ .code {
     background-color: rgb(90 100 88 / 30%);
 }
 
-/*.markdown-highlighting span.pre > span {
- *     background-color: rgb(90 100 88 / 30%);
- *         padding: 0;
- *         }*/
-
-pre .prism span.token.function,
-.markdown-highlighting .token.pre.gfm span.token.function {
+pre .prism .token.function,
+ .token.pre.gfm .token.function {
     color: #b8c30f;
 }
 
-pre .prism span.token.keyword,
-pre .prism span.token.key.atrule,
-.markdown-highlighting .token.pre.gfm span.token.key.atrule,
-.markdown-highlighting .token.pre.gfm span.token.keyword {
+pre .prism .token.keyword,
+pre .prism .token.key.atrule,
+ .token.pre.gfm .token.key.atrule,
+ .token.pre.gfm .token.keyword {
     color: rgb(241 115 7);
     font-weight: bold!important;
 }
-pre .prism span.token.string,
-.markdown-highlighting .token.pre.gfm span.token.string {
+pre .prism .token.string,
+ .token.pre.gfm .token.string {
     color: rgb(77 208 214 / 91%);
 }
