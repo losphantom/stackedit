@@ -14,9 +14,9 @@ h1, h2, h3, h4, h5, h6, h7 {
     color: orange
 }
 
-.cl-li + .token.p,
+.cl-li ~ .token.p,
 li, li > p {
-    color: rgb(133 166 186);
+    color: rgb(193 211 222);
 }
 .cl.cl-li {
     font-weight: bold!important;
@@ -24,7 +24,11 @@ li, li > p {
 
 blockquote p,
 .blockquote .p {
-    color: #b8c30f;
+    color: #839815;
+}
+.app--dark blockquote p,
+.app--dark .blockquote .p {
+    color: #9cb517;
 }
 
 .cl {
@@ -36,36 +40,85 @@ p,
     color: #EBDFB4;
 }
 */
-
-.cl-preview-section a,
- .link {
-    color: rgb(224 238 255);
+.markdown-highlighting .token.cl,
+.markdown-highlighting .token.hr {
+    color: rgb(87 193 120 / 69%);
+}
+.app--dark .markdown-highlighting .token.cl,
+.app--dark .markdown-highlighting .token.hr {
+    color: hsl(106deg 84% 46% / 75%);
 }
 
-code, pre,
- .code,
- .pre {
-    color: rgb(241 184 25 / 92%);
+.markdown-highlighting .token.em {
+    color: #3b57a9;
+}
+
+ .cl-preview-section a,
+.markdown-highlighting .token.link {
+    color: rgb(54 133 228);
+}
+.app--dark .cl-preview-section a,
+.app--dark .markdown-highlighting .token.link {
+    color: hsl(200deg 75% 74% / 78%);
+}
+
+.app--light code, 
+.app--light .markdown-highlighting pre,
+.app--light .markdown-highlighting .code,
+.app--light .markdown-highlighting .token.pre {
+    color: rgb(0 0 0);
+}
+
+.app--dark code,
+.app--dark .markdown-highlighting pre,
+.app--dark .markdown-highlighting .code,
+.app--dark .markdown-highlighting .token.pre {
+    color: hsl(56deg 88% 67% / 86%);
+}
+div.app--dark .markdown-highlighting .pre [class*=language-] {
+    color: hsl(42deg 55% 93% / 75%);
+    // color: #fff;
+}
+
+div.app--dark .layout__panel--preview {
+    color: hsl(42deg 55% 93% / 75%);
 }
 
 .cl-preview-section code, 
  .code {
-    background-color: rgb(90 100 88 / 30%);
+    background-color: rgb(112 123 110 / 12%);
 }
 
-pre .prism .token.function,
- .token.pre.gfm .token.function {
-    color: #b8c30f;
+.app--light pre .prism .token.function,
+.app--light .token.pre.gfm .token.function {
+    color: #1c790c;
+}
+.app--dark pre .prism .token.function,
+.app--dark .token.pre.gfm .token.function {
+    color: #45d82c;
 }
 
 pre .prism .token.keyword,
 pre .prism .token.key.atrule,
- .token.pre.gfm .token.key.atrule,
- .token.pre.gfm .token.keyword {
+ .token.pre.gfm span.token.key.atrule,
+ .token.pre.gfm span.token.keyword {
     color: rgb(241 115 7);
     font-weight: bold!important;
 }
 pre .prism .token.string,
  .token.pre.gfm .token.string {
-    color: rgb(77 208 214 / 91%);
+    color: rgb(179 38 5 / 91%);
+}
+
+.app--dark pre .prism .token.string,
+.app--dark .token.pre.gfm .token.string {
+    color: rgb(251 159 137 / 91%);
+}
+.app--dark .token.pre.gfm .token.string {
+    color: #f1b06b;
+}
+
+div.app--dark .layout__panel--editor, 
+div.app--dark .layout__panel--preview {
+    background-color: #2d291fed;
 }
