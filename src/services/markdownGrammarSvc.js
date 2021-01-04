@@ -309,6 +309,7 @@ export default {
     rest.strong = {
       pattern: /(^|[^\w*])(__|\*\*)(?![_*])[\s\S]*?\2(?=([^\w*]|$))/gm,
       lookbehind: true,
+      greedy: true,
       inside: {
         'cl cl-strong cl-start': /^(__|\*\*)/,
         'cl cl-strong cl-close': /(__|\*\*)$/,
@@ -317,6 +318,7 @@ export default {
     rest.em = {
       pattern: /(^|[^\w*])(_|\*)(?![_*])[\s\S]*?\2(?=([^\w*]|$))/gm,
       lookbehind: true,
+      greedy: true,
       inside: {
         'cl cl-em cl-start': /^(_|\*)/,
         'cl cl-em cl-close': /(_|\*)$/,
@@ -325,6 +327,7 @@ export default {
     rest['strong em'] = {
       pattern: /(^|[^\w*])(__|\*\*)(_|\*)(?![_*])[\s\S]*?\3\2(?=([^\w*]|$))/gm,
       lookbehind: true,
+      greedy: true,
       inside: {
         'cl cl-strong cl-start': /^(__|\*\*)(_|\*)/,
         'cl cl-strong cl-close': /(_|\*)(__|\*\*)$/,
@@ -333,6 +336,7 @@ export default {
     rest['strong em inv'] = {
       pattern: /(^|[^\w*])(_|\*)(__|\*\*)(?![_*])[\s\S]*?\3\2(?=([^\w*]|$))/gm,
       lookbehind: true,
+      greedy: true,
       inside: {
         'cl cl-strong cl-start': /^(_|\*)(__|\*\*)/,
         'cl cl-strong cl-close': /(__|\*\*)(_|\*)$/,
