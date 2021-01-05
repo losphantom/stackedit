@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 .cl-li ~ .token.p,
 li, li > p {
+    color: rgb(5 105 167);
+}
+.app--dark .cl-li ~ .token.p,
+.app--dark li, li > p {
     color: rgb(193 211 222);
 }
 .cl.cl-li {
