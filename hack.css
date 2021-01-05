@@ -19,7 +19,8 @@ li, li > p {
     color: rgb(5 105 167);
 }
 .app--dark .cl-li ~ .token.p,
-.app--dark li, li > p {
+.app--dark li, 
+.app--dark li > p {
     color: rgb(193 211 222);
 }
 .cl.cl-li {
