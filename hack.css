@@ -82,11 +82,9 @@ p,
 }
 div.app--dark .markdown-highlighting .pre [class*=language-] {
     color: hsl(42deg 55% 93% / 75%);
-    // color: #fff;
 }
 
-//     color: hsl(42deg 55% 93% / 75%);
-// }
+/*     color: hsl(42deg 55% 93% / 75%); */
 .app.app--dark .layout__panel--preview,
 .app.app--dark .markdown-highlighting {
     color: rgb(255 242 197 / 85%);
