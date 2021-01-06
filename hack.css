@@ -85,9 +85,13 @@ div.app--dark .markdown-highlighting .pre [class*=language-] {
     // color: #fff;
 }
 
-div.app--dark .layout__panel--preview {
-    color: hsl(42deg 55% 93% / 75%);
+div.app--dark .layout__panel--preview, // {
+//     color: hsl(42deg 55% 93% / 75%);
+// }
+.app--dark .markdown-highlighting {
+    color: rgb(255 242 197 / 85%);
 }
+
 
 .cl-preview-section code, 
  .code {
