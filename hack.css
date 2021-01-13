@@ -57,6 +57,9 @@ p,
 .markdown-highlighting .token.em {
     color: #3b57a9;
 }
+.app-dark .markdown-highlighting .token.em {
+    color: rgb(156 195 161);
+}
 
  .cl-preview-section a,
 .markdown-highlighting .token.link {
