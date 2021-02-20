@@ -16,12 +16,12 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 .cl-li ~ .token.p,
 li, li > p {
-    color: rgb(5 105 167);
+    color: rgb(7 12 78);
 }
 .app--dark .cl-li ~ .token.p,
 .app--dark li, 
 .app--dark li > p {
-    color: rgb(193 211 222);
+    color: rgb(249 228 169);
 }
 .cl.cl-li {
     font-weight: bold!important;
@@ -47,7 +47,7 @@ p,
 */
 .markdown-highlighting .token.cl,
 .markdown-highlighting .token.hr {
-    color: rgb(87 193 120 / 69%);
+    color: rgb(15 152 58 / 87%);
 }
 .app--dark .markdown-highlighting .token.cl,
 .app--dark .markdown-highlighting .token.hr {
@@ -133,4 +133,9 @@ pre .prism .token.string,
 div.app--dark .layout__panel--editor, 
 div.app--dark .layout__panel--preview {
     background-color: #2d291fed;
+}
+
+.layout__panel--editor, 
+.layout__panel--preview {
+    background-color: #e6e6e6;
 }
